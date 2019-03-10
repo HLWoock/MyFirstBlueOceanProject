@@ -1,4 +1,5 @@
 HELP.md
+/bin
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
@@ -11,17 +12,3 @@ HELP.md
 .settings
 .springBeans
 .sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
