@@ -16,13 +16,13 @@ pipeline {
     stage('Document') {
       steps {
         echo 'create javadoc'
-        bat(script: 'gradlew javadock --info', returnStatus: true, returnStdout: true)
+        bat(script: 'gradlew javadoc --info', returnStatus: true, returnStdout: true)
       }
     }
     stage('Static Analysis') {
       steps {
         echo 'making static analysis'
-        bat(script: 'gradle check --info', returnStatus: true, returnStdout: true)
+        bat(script: 'gradlew check --info', returnStatus: true, returnStdout: true)
       }
     }
     stage('Deploy') {
